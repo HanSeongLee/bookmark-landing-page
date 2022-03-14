@@ -1,0 +1,28 @@
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 100%;
+  min-width: 114px;
+
+  &.primary {
+    color: #FFFFFF;
+    background: #5267DF;
+  }
+
+  &.secondary {
+    color: rgba(36, 42, 69, 0.75);
+    background: #F7F7F7;
+  }
+
+  &.danger {
+    color: #FFFFFF;
+    background: #FA5959;
+  }
+}
