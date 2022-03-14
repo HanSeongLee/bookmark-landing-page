@@ -1,0 +1,44 @@
+
+.featureCard {
+  text-align: center;
+
+  .featureImageContainer {
+    position: relative;
+    margin-bottom: 69px;
+
+    //&::before {
+    //  position: absolute;
+    //  top: 37px;
+    //  left: -308px;
+    //  width: 577px;
+    //  height: 203px;
+    //  background: #5267DF;
+    //  border-radius: 316.5px;
+    //  content: "";
+    //}
+
+    .featureImage {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.075px;
+    color: #242A45;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(36, 42, 69, 0.5);
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: initial;
+  }
+}
