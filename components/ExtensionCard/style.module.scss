@@ -1,0 +1,41 @@
+
+.extensionCard {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 49px 30px 32px;
+
+    .image {
+      margin-bottom: 32px;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.25px;
+      color: #242A45;
+      margin-bottom: 6px;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: rgba(36, 42, 69, 0.5);
+    }
+  }
+
+  .dots {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 24px;
+  }
+}
