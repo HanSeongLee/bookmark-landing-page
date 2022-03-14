@@ -1,0 +1,20 @@
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.075px;
+    color: #242A45;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(36, 42, 69, 0.5);
+  }
+}
