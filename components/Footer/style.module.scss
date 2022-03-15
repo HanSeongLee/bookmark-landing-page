@@ -1,0 +1,29 @@
+
+.footer {
+  text-align: center;
+  background: #242A45;
+  padding: 40px 0 43px;
+
+  .logo {
+    margin-bottom: 39px;
+  }
+
+  .sitemapContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 32px;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 1.73px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  .socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 40px;
+  }
+}
