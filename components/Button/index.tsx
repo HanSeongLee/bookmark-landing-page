@@ -1,8 +1,8 @@
-import React from "react";
+import React, {ButtonHTMLAttributes} from "react";
 import styles from './style.module.scss';
 import cn from "classnames";
 
-interface IProps {
+interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variants?: 'primary' | 'secondary' | 'danger';
 }
 
