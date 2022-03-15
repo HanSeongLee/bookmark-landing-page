@@ -1,0 +1,26 @@
+
+.faqSection {
+  padding-bottom: 128px;
+
+  .faqTitleDescriptor {
+    margin-bottom: 64px;
+
+    h2 {
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .faqContainer {
+    margin-bottom: 48px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: initial;
+    }
+  }
+}
