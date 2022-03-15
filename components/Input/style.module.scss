@@ -1,0 +1,61 @@
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+
+  &.error {
+    background: #FA5959;
+    border-radius: 5px;
+    padding: 2px 2px 0;
+
+    .inputWrapper {
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        content: url("/img/icon-error.svg");
+        z-index: 1;
+      }
+
+      .input {
+        padding: 10px 50px 10px 20px;
+      }
+    }
+  }
+
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .input {
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.25px;
+      color: #242A45;
+      background: #FFFFFF;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 20px;
+      outline: none;
+
+      &::placeholder {
+        color: rgba(36, 42, 69, 0.25);
+      }
+    }
+  }
+
+  .errorMessage {
+    text-align: left;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    padding: 6px 12px;
+  }
+}
