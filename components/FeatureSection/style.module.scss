@@ -1,0 +1,33 @@
+
+.featureSection {
+
+  .featuresTitleDescriptor {
+    margin-bottom: 40px;
+  }
+
+  .tabContainer {
+    margin-bottom: 72px;
+  }
+
+  .featureContainer {
+    display: flex;
+    grid-gap: 60px;
+    transition: transform 0.6s;
+    transform: translateX(calc(-100vw * var(--index)));
+    margin-bottom: 77px;
+
+    > div {
+      min-width: calc(100vw - 64px);
+    }
+  }
+
+  .downloadTitledDescriptor {
+    margin-bottom: 40px;
+  }
+
+  .extensionContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+}
