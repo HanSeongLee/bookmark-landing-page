@@ -1,14 +1,30 @@
+@import "styles/utils";
 
 .heroSection {
   padding-top: 80px;
   text-align: center;
 
+  @include media(">desktop") {
+    padding-top: 108px;
+    text-align: left;
+  }
+
   .container {
+    @include media(">desktop") {
+      display: flex;
+      flex-direction: row-reverse;
+      grid-gap: 65px;
+    }
   }
 
   .heroImageContainer {
     position: relative;
     margin-bottom: 94px;
+
+    @include media(">desktop") {
+      flex: 1;
+      margin-bottom: 0;
+    }
 
     &::before {
       position: absolute;
@@ -19,12 +35,37 @@
       background: #5267DF;
       border-radius: 316.5px;
       content: "";
+
+      @include media(">desktop") {
+        top: 134px;
+        left: 115px;
+        width: 1000px;
+        height: 352px;
+      }
     }
 
     .heroImage {
       position: relative;
       width: 100%;
       filter: drop-shadow(0px 30px 40px rgba(47, 59, 129, 0.2));
+
+      @include media(">desktop") {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 579px;
+        height: 386px;
+      }
+    }
+  }
+
+  .content {
+    @include media(">desktop") {
+      max-width: 540px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 0 123px;
     }
   }
 
@@ -35,6 +76,13 @@
     letter-spacing: -0.09px;
     color: #242A45;
     margin-bottom: 16px;
+
+    @include media(">desktop") {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -0.15px;
+      margin-bottom: 24px;
+    }
   }
 
   .description {
@@ -42,10 +90,20 @@
     line-height: 25px;
     color: rgba(36, 42, 69, 0.5);
     margin-bottom: 32px;
+
+    @include media(">desktop") {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   .buttonContainer {
     display: flex;
     grid-gap: 14px;
+
+    @include media(">desktop") {
+      max-width: 343px;
+      grid-gap: 16px;
+    }
   }
 }

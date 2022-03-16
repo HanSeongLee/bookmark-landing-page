@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
                          alt={''}
                     />
                 </div>
-                <div>
+                <div className={styles.content}>
                     <h2 className={styles.title}>
                         A Simple Bookmark Manager
                     </h2>
