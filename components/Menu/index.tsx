@@ -4,23 +4,22 @@ import SitemapContainer from "../../containers/SitemapContainer";
 import SocialContainer from "../../containers/SocialContainer";
 import Button from "../Button";
 import Container from "../Container";
+import cn from "classnames";
 
 type IProps = {
     open?: boolean;
 };
 
 const Menu: React.FC<IProps> = ({ open }) => {
-    if (!open) {
-        return (<></>);
-    }
-
     return (
-        <nav className={styles.nav}>
+        <nav className={cn(styles.nav, {
+            [styles.open]: open,
+        })}>
             <div className={styles.menu}>
                 <Container className={styles.container}>
-                    <div>
+                    <div className={styles.header}>
                         <SitemapContainer className={styles.sitemapContainer} />
-                        <Button variants={'outline'}>
+                        <Button variants={'login'}>
                             Login
                         </Button>
                     </div>
