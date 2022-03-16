@@ -1,6 +1,11 @@
+@import "styles/utils";
 
 .header {
   padding-top: 40px;
+
+  @include media(">desktop") {
+    padding-top: 48px;
+  }
 
   &.open {
     .top {
@@ -28,5 +33,9 @@
     border: none;
     cursor: pointer;
     outline: none;
+
+    @include media(">desktop") {
+      display: none;
+    }
   }
 }
