@@ -13,19 +13,36 @@
   min-width: 114px;
   cursor: pointer;
 
+  @mixin hover($color, $border-color) {
+    @include media(">desktop") {
+      border: 2px solid transparent;
+      transition: background 0.3s, color 0.3s, border 0.3s;
+      padding: 8px 0;
+
+      &:hover {
+        background: #FFFFFF;
+        color: $color;
+        border: 2px solid $border-color;
+      }
+    }
+  }
+
   &.primary {
     color: #FFFFFF;
     background: #5267DF;
+    @include hover(#5267DF, #5267DF);
   }
 
   &.secondary {
     color: rgba(36, 42, 69, 0.75);
     background: #F7F7F7;
+    @include hover(rgba(36, 42, 69, 0.75), #5B6074);
   }
 
   &.danger {
     color: #FFFFFF;
     background: #FA5959;
+    @include hover(#FA5959, #FA5959);
   }
 
   &.login {
@@ -47,10 +64,9 @@
       line-height: 17px;
       letter-spacing: 1.5px;
       background: #FA5959;
-      box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
       border-radius: 5px;
       border: 2px solid transparent;
-      transition: background 0.3s, color 0.3s;
     }
+    @include hover(#FA5959, #FA5959);
   }
 }
