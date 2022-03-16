@@ -25,4 +25,14 @@
     color: #FFFFFF;
     background: #FA5959;
   }
+
+  &.outline {
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 2.3px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 16px 0 15px;
+  }
 }
