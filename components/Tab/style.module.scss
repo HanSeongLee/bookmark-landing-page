@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .tab {
   text-align: center;
@@ -9,6 +10,11 @@
   padding: 20px 0;
   cursor: pointer;
   border-top: 1px solid rgba(73, 93, 207, 0.2);
+
+  @include media(">desktop") {
+    border-top: none;
+    border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+  }
 
   &:last-child {
     border-bottom: 1px solid rgba(73, 93, 207, 0.2);
@@ -25,6 +31,10 @@
     transition: transform 0.3s;
     transform: scaleX(0) translateX(-50%);
     transform-origin: left;
+
+    @include media(">desktop") {
+      width: 100%;
+    }
   }
 
   &.active {
