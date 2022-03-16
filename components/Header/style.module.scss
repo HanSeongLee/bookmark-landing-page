@@ -1,0 +1,32 @@
+
+.header {
+  padding-top: 40px;
+
+  &.open {
+    .top {
+      z-index: 2;
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+}

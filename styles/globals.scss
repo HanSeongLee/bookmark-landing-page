@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  &.overlay {
+    overflow: hidden;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
