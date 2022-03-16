@@ -1,7 +1,9 @@
+@import "styles/utils";
 
 .container {
   text-align: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
 
   .title {
@@ -10,11 +12,24 @@
     line-height: 52px;
     letter-spacing: -0.075px;
     color: #242A45;
+
+    @include media(">desktop") {
+      font-size: 32px;
+      line-height: 52px;
+      letter-spacing: -0.1px;
+      margin-bottom: 16px;
+    }
   }
 
   .description {
     font-size: 15px;
     line-height: 25px;
     color: rgba(36, 42, 69, 0.5);
+
+    @include media(">desktop") {
+      max-width: 540px;
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 }
