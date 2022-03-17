@@ -8,7 +8,7 @@ import SocialContainer from "../../containers/SocialContainer";
 const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
-            <Container>
+            <Container className={styles.container}>
                 <Logo className={styles.logo}
                       src={'/footer-logo.svg'}
                 />
