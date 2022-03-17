@@ -28,18 +28,21 @@ const FeatureSection: React.FC = () => {
                               selected={tabIndex}
                               onTabChange={onTabChange}
                 />
+            </Container>
+            <div className={styles.featureContainerWrapper}>
                 <FeatureContainer className={styles.featureContainer}
                                   style={{
                                       '--index': tabIndex,
                                   } as React.CSSProperties}
                 />
-
+            </div>
+            <Container>
                 <TitleDescriptor className={styles.downloadTitledDescriptor}
                                  title={'Download the extension'}
                                  description={'We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.'}
                 />
 
-                <ExtensionContainer className={styles.extensionContainer} />
+                <ExtensionContainer className={styles.extensionContainer}/>
             </Container>
         </section>
     );
