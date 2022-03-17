@@ -1,8 +1,13 @@
+@import "styles/utils";
 
 .contactSection {
   background: #5267DF;
   text-align: center;
   padding: 60px 0;
+
+  @include media(">desktop") {
+    padding: 58px 0 74px;
+  }
 
   .subtitle {
     font-weight: 500;
@@ -10,6 +15,12 @@
     line-height: 40px;
     letter-spacing: 4.6px;
     color: #FFFFFF;
+
+    @include media(">desktop") {
+      font-size: 13px;
+      letter-spacing: 5px;
+      margin-bottom: 24px;
+    }
   }
 
   .title {
@@ -19,11 +30,34 @@
     letter-spacing: -0.075px;
     color: #FFFFFF;
     margin-bottom: 32px;
+
+    @include media(">desktop") {
+      max-width: 408px;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.1px;
+      margin: 0 auto 36px;
+    }
   }
 
   .contactContainer {
     display: flex;
     flex-direction: column;
     grid-gap: 16px;
+
+    @include media(">desktop") {
+      max-width: 442px;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 auto;
+
+      > div {
+        width: 100%;
+      }
+
+      > button {
+        max-width: 126px;
+      }
+    }
   }
 }
