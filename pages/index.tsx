@@ -1,5 +1,12 @@
 import type { NextPage } from 'next'
+import styles from './style.module.scss';
 import Head from 'next/head';
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import FeatureSection from "../components/FeatureSection";
+import FAQSection from "../components/FAQSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -54,6 +61,14 @@ const Home: NextPage = () => {
         </Head>
 
         <main>
+          <Header/>
+          <div className={styles.container}>
+            <HeroSection/>
+            <FeatureSection/>
+            <FAQSection/>
+          </div>
+          <ContactSection />
+          <Footer />
         </main>
       </>
   );
