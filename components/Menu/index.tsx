@@ -8,9 +8,10 @@ import cn from "classnames";
 
 type IProps = {
     open?: boolean;
+    onClose: () => void;
 };
 
-const Menu: React.FC<IProps> = ({ open }) => {
+const Menu: React.FC<IProps> = ({ open, onClose }) => {
     return (
         <nav className={cn(styles.nav, {
             [styles.open]: open,
@@ -18,7 +19,9 @@ const Menu: React.FC<IProps> = ({ open }) => {
             <div className={styles.menu}>
                 <Container className={styles.container}>
                     <div className={styles.header}>
-                        <SitemapContainer className={styles.sitemapContainer} />
+                        <SitemapContainer className={styles.sitemapContainer}
+                                          onLinkClick={_ => onClose()}
+                        />
                         <Button variants={'login'}>
                             Login
                         </Button>

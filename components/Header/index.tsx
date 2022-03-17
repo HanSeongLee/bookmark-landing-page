@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import styles from './style.module.scss';
 import Container from "../Container";
 import Logo from "../Logo";
@@ -23,6 +23,19 @@ const Header: React.FC = () => {
         });
     }, [openMenu]);
 
+    const onClose = useCallback(() => {
+        setOpenMenu(false);
+    }, []);
+
+    useEffect(() => {
+        const body = window.document.getElementsByTagName('html')[0];
+        if (openMenu) {
+            body.classList.add('overlay');
+        } else {
+            body.classList.remove('overlay');
+        }
+    }, [openMenu]);
+
     return (
         <header className={cn(styles.header, {
             [styles.open]: openMenu,
@@ -41,7 +54,9 @@ const Header: React.FC = () => {
                         />
                     </button>
                 </div>
-                <Menu open={openMenu}/>
+                <Menu open={openMenu}
+                      onClose={onClose}
+                />
             </Container>
         </header>
     );

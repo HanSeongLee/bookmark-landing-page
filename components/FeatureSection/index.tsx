@@ -14,7 +14,9 @@ const FeatureSection: React.FC = () => {
     }, []);
 
     return (
-        <section className={styles.featureSection}>
+        <section className={styles.featureSection}
+                 id={'features'}
+        >
             <Container>
                 <TitleDescriptor className={styles.featuresTitleDescriptor}
                                  title={'Features'}
@@ -36,7 +38,7 @@ const FeatureSection: React.FC = () => {
                                   } as React.CSSProperties}
                 />
             </div>
-            <Container>
+            <Container id={'pricing'}>
                 <TitleDescriptor className={styles.downloadTitledDescriptor}
                                  title={'Download the extension'}
                                  description={'We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.'}

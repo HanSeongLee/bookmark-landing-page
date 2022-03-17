@@ -5,7 +5,9 @@ import ContactContainer from "../../containers/ContactContainer";
 
 const ContactSection: React.FC = () => {
     return (
-        <section className={styles.contactSection}>
+        <section className={styles.contactSection}
+                 id={'contact'}
+        >
             <Container>
                 <div className={styles.subtitle}>
                     35,000+ ALREADY JOINED
