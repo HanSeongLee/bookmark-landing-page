@@ -8,6 +8,10 @@
 
   .featuresTitleDescriptor {
     margin-bottom: 40px;
+
+    @include media(">desktop") {
+      margin-bottom: 72px;
+    }
   }
 
   .tabContainer {

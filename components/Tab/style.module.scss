@@ -12,6 +12,7 @@
   border-top: 1px solid rgba(73, 93, 207, 0.2);
 
   @include media(">desktop") {
+    padding: 0 0 31px;
     border-top: none;
     border-bottom: 1px solid rgba(73, 93, 207, 0.2);
   }
