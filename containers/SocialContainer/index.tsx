@@ -22,6 +22,7 @@ const SocialContainer: React.FC<HTMLAttributes<HTMLUListElement>> = (props) => {
                 <li key={index}>
                     <a href={url}
                        target={'_blank'}
+                       aria-label={name}
                     >
                         {icon}
                     </a>
