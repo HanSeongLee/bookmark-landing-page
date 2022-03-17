@@ -2,6 +2,10 @@
 
 .featureSection {
 
+  @include media(">desktop") {
+    margin-top: -69px;
+  }
+
   .featuresTitleDescriptor {
     margin-bottom: 40px;
   }
