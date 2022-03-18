@@ -1,9 +1,16 @@
+@import "styles/utils";
 
 .faq {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.14px;
   color: rgba(36, 42, 69, 0.75);
+
+  @include media(">desktop") {
+    &:first-child {
+      border-top: 1px solid rgba(36, 42, 69, 0.15);
+    }
+  }
 
   &.open {
     .question {
@@ -35,10 +42,20 @@
     word-break: break-word;
     cursor: pointer;
 
+    @include media(">desktop") {
+      font-size: 18px;
+      line-height: 32px;
+      padding: 19px 30px 13px 1.5px;
+    }
+
     svg {
       position: absolute;
       right: 0;
       transition: transform 0.3s;
+
+      @include media(">desktop") {
+        right: 24px;
+      }
     }
   }
 
@@ -47,5 +64,11 @@
     max-height: 0;
     transition: max-height 0.8s, padding 0.4s;
     border-bottom: 1px solid rgba(36, 42, 69, 0.15);
+
+    @include media(">desktop") {
+      font-size: 16px;
+      line-height: 36px;
+      letter-spacing: 0.15px;
+    }
   }
 }
